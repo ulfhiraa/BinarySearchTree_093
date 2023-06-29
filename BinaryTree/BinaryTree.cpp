@@ -27,4 +27,9 @@ public:
 	{
 		ROOT = NULL; // intializing ROOT to NULL
 	}
+
+	void search(string element, Node*& parent, Node*& currentNode)
+	{
+
+	}
 };
