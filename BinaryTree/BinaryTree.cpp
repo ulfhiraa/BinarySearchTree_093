@@ -44,6 +44,11 @@ public:
 			ROOT = newNode; // 5a. Mark the new Node as ROOT
 			return; // step 5b. exit 
 		}
+
+		if (element < parent->info) // step 6. if the value in the data field of the new Node is less than that of parent
+		{
+			parent->leftChild = newNode; // 6a. make the left child of the parent point to the new Node
+		}
 	}
 
 	void search(string element, Node*& parent, Node*& currentNode)
