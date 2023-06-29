@@ -125,6 +125,28 @@ int main()
 	BinaryTree obj;
 	while (true)
 	{
+		cout << "\nMenu" << endl;
+		cout << "1. Implement insert operation" << endl;
+		cout << "2. Perform Inorder Traversal" << endl;
+		cout << "3. Perform Preorder Traversal" << endl;
+		cout << "4. Perform Postorder Traversal" << endl;
+		cout << "5. Exit" << endl;
+		cout << "\nEnter your choice (1-5) : ";
 
+		char ch;
+		cin >> ch;
+		cout << endl;
+
+		switch (ch)
+		{
+		case '1':
+		{
+			cout << "Enter a word : ";
+			string word;
+			cin >> word;
+			obj.insert(word);
+			break;
+		}
+		}
 	}
 }
