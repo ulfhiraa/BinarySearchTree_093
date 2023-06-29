@@ -49,6 +49,10 @@ public:
 		{
 			parent->leftChild = newNode; // 6a. make the left child of the parent point to the new Node
 		}
+		else if (element > parent->info) // step 7. if the value in the data field of the new Node is greater than that of the parent
+		{
+			parent->rightChild = newNode; // 7a. make the right child of the parent point to the new Node 
+		}
 	}
 
 	void search(string element, Node*& parent, Node*& currentNode)
