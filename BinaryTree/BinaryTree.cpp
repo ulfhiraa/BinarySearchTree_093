@@ -28,6 +28,10 @@ public:
 		ROOT = NULL; // intializing ROOT to NULL
 	}
 
+	void insert(string element) // Insert a node in the Binary Search Tree
+	{
+	}
+
 	void search(string element, Node*& parent, Node*& currentNode)
 	{
 		// This function searches the currentNode of the specified Node as well as the current Node of its parent
