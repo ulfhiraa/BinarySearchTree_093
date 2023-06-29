@@ -31,6 +31,8 @@ public:
 	void insert(string element) // Insert a node in the Binary Search Tree
 	{
 		Node* newNode = new Node(element, NULL, NULL); // step 1. Allocate memory for the new Node
+		newNode->info = element; //step 2. Assign value to the data field of the new Node
+
 	}
 
 	void search(string element, Node*& parent, Node*& currentNode)
