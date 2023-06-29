@@ -32,7 +32,8 @@ public:
 	{
 		Node* newNode = new Node(element, NULL, NULL); // step 1. Allocate memory for the new Node
 		newNode->info = element; //step 2. Assign value to the data field of the new Node
-
+		newNode->leftChild = NULL; // step 3. Make the left and right child of the new Node point to NULL
+		newNode->rightChild = NULL;
 	}
 
 	void search(string element, Node*& parent, Node*& currentNode)
