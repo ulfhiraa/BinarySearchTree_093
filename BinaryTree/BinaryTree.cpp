@@ -70,4 +70,21 @@ public:
 				currentNode = currentNode->rightChild;
 		}
 	}
+
+	//traversing
+	void inorder(Node* ptr) // cara pertama
+	{
+		if (ROOT == NULL)
+		{
+			cout << "Tree is empty" << endl;
+			return;
+		}
+		if (ptr != NULL)
+		{
+			inorder(ptr->leftChild);
+			cout << ptr->info << " ";
+			inorder(ptr->rightChild);
+		}
+	}
+
 };
