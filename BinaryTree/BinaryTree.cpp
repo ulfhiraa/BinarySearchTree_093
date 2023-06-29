@@ -34,6 +34,10 @@ public:
 		newNode->info = element; //step 2. Assign value to the data field of the new Node
 		newNode->leftChild = NULL; // step 3. Make the left and right child of the new Node point to NULL
 		newNode->rightChild = NULL;
+
+		Node* parent = NULL;
+		Node* currentNode = NULL;
+
 	}
 
 	void search(string element, Node*& parent, Node*& currentNode)
